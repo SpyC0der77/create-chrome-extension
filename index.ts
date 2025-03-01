@@ -4,6 +4,13 @@ import chalk from 'chalk'
 import * as fs from 'fs'
 import * as path from 'path'
 
+/**
+ * Orchestrates the interactive process for creating a Chrome extension.
+ *
+ * This asynchronous function prompts the user to provide essential extension details—including the extension name, description, manifest version, permissions, and optional features (background script, content script, popup page, options page, and DevTools page)—and then generates the required project files and directories accordingly. It configures the manifest file, creates relevant script and HTML files, optionally sets up a source folder and package.json for build options, and produces a TODO.md with next steps.
+ *
+ * The function terminates the process with an error if required inputs are missing or if the target extension directory already exists.
+ */
 async function main() {
   intro('Welcome to create-chrome-extension!')
 
