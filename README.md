@@ -2,6 +2,12 @@
 
 An interactive TypeScript script for scaffolding a Chrome extension. It prompts for extension metadata, permissions, scripts, popup technology, and optional build dependencies, then writes a folder named after the extension in the current directory.
 
+## Terminal demo
+
+![Recorded terminal usage](docs/images/cli-demo.gif)
+
+Recorded with [VHS](https://github.com/charmbracelet/vhs). [Recording source and instructions](docs/demo/README.md).
+
 ## Run from source
 
 The repo contains `index.ts` and no package manifest or published CLI setup. Use Bun to run the TypeScript source directly:
